@@ -1,5 +1,5 @@
 # std.py
 
 ```sh
-pip instal stdpy
+pip install stdpy
 ```
