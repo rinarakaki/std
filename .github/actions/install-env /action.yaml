@@ -1,0 +1,15 @@
+name: Install env
+runs:
+  using: "composite"
+  steps:
+    - name: actions/checkout@v3
+      uses: actions/checkout@v3
+
+    - name: actions/setup-python@v4
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.12"
+
+    - name: Install dependencies
+      shell: bash
+      run: pip install .[dev]
