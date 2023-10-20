@@ -1,1 +1,3 @@
-type Option[T] = T | None
+cdef enum Option[T]:
+    None
+    Some[T]
